@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #outer {
+            border: 1px solid red;
+            height: 200px;
+            display: flex;
+            width: 300px;
+            flex-direction: row;
+            gap: 2px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #inner {
+            height: 50px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+            width: 100px;
+            margin: 2px;
+        }
+
+        #outer1 {
+            border: 1px solid red;
+            height: 200px;
+            display: flex;
+            width: 300px;
+            flex-direction: row;
+            gap: 2px;
+
+
+        }
+
+        #five {
+            height: 50px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+            width: 100px;
+            margin: 2px;
+            flex-grow: 5;
+            border-radius: 100px;
+
+        }
+
+        .design {
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            border: 1px solid hsl(from gray h s l);
+            height: 500px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow:5px 5px black;
+            background: white;
+            padding: 20px;
+        }
+
+        .card #img {
+            width: 340px;
+            border-radius: 20px;
+
+        }
+
+        .learning {
+            background-color: yellow;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        .card h1 {
+            font-size: 20px;
+          
+        }
+        .card #para {
+            font-size: 15px;
+width:fit-content;
+        }
+
+        .footer {
+            display: flex;
+        }
+
+        .footer #img{
+        border-radius: 50% 50% 50% 50%;
+        width:70px;
+        }
+        .footer p {
+            font-weight: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="inner"> 1</div>
+        <div id="inner"> 2</div>
+        <div id="inner"> 3</div>
+        <div id="inner"> 4</div>
+        <div id="inner"> 5</div>
+        <div id="inner"> 6</div>
+
+    </div>
+    <br>
+
+    <div id="outer1">
+        <div id="inner"> 1</div>
+        <div id="inner"> 2</div>
+        <div id="inner"> 3</div>
+        <div id="inner"> 4</div>
+        <div id="five"> 5</div>
+        <div id="inner"> 6</div>
+
+    </div>
+    <br>
+    <div class="design">
+        <div class="card">
+            <img id="img" src=" D:\D folder\images\461136.jpg " alt="">
+            <p class="learning">Learning</p>
+            <p>Date</p>
+            <h1>HTML,CSS,FOUNDATION</h1>
+            <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente tenetur nulla fugit aliquid vero
+                adipisci consequatur accusamus deleniti quam iure!</p>
+        
+        <div class="footer">
+            <img id="img" src=" D:\D folder\images\461136.jpg " alt="">
+            <p>&nbsp; &nbsp;   Groger mick</p>
+        </div>
+</div>
+    </div>
+</body>
+
+</html>

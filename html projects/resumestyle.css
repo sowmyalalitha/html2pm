@@ -1,0 +1,66 @@
+body{
+    background-image: linear-gradient(to right,red,green);
+    background-size:cover;
+}
+.resume{
+    border: solid 10px blue;
+        margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: blanchedalmond;
+}
+
+.resume section{
+    display: block;
+}
+#maintitle {
+    background-color: solid 10px rgb(red, rgb(46, 216, 239), blue);
+}
+.bodyy #h2{ background-color: rgb(29, 242, 114);}
+.bodyy #h3{  background-color: rgb(242, 203, 29);}
+.bodyy .h4{  background-color: rgb(18, 215, 241);}
+
+.bodyy .heading { background-color: rgb(18, 215, 241);
+
+}
+.bodyy #hh4 { background-color: rgb(227, 12, 227);
+}
+.bodyy .img img{ 
+    background-color: rgba(136, 88, 232,4);
+    width: 100px;
+    height: 50px;
+    size: 50px;
+    align-items: center;
+  
+    background-repeat: no-repeat;
+}
+#outer{
+    border: 5px orange;
+    margin:20px;
+   
+    padding: 20px;
+    box-shadow : 5px,5px black;
+}
+#inner{
+width:100px;
+border: 2px solid yellow;
+margin:20px;
+padding:20px;
+display: inline-flex;
+}
+*{
+    box-sizing: border-box;
+}
+
+#img{float:right;
+height: 15%;
+width: 15%;
+
+}
+#img1{float:left;
+    height: 15%;
+    width: 15%;
+    
+    }
+
+#para{clear:both}

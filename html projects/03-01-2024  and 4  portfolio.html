@@ -1,0 +1,361 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'DM Sans', sans-serif;
+            font-family: 'Grenze Gotisch', serif;
+            font-family: 'Jost', sans-serif;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        header {
+            background-color: rgb(17, 229, 208);
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            max-height: 300pxs;
+        }
+
+        .menu ul {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 80%
+        }
+
+        .menu li {
+            padding: 10px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 28px;
+        }
+
+        .menu li a:hover {
+            color: rgb(250, 141, 141)
+        }
+
+        #home {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+        }
+
+        .right img {
+            width: 400px;
+            height: 400px;
+        }
+
+        .left {
+            padding: 0 50px;
+        }
+
+        .heading {
+            font-size: 80px;
+            margin: 0px;
+        }
+
+        .sub-heading {
+            font-size: 48px;
+            margin: 0px;
+        }
+
+        .sub-heading span {
+            color: grey;
+        }
+
+        .data {
+            font-size: 24px;
+            color: black;
+            text-align: justify;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0 20px;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: grey;
+            color: white;
+            border: 1px solid grey;
+            cursor: url(sowmyaimg.jpg) 2 4, auto;
+
+        }
+
+        #about {
+            padding: 50px 100px;
+        }
+
+        .title {
+            font-size: 48px;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: grey;
+        }
+
+        #about p {
+            padding: 0 50px;
+            text-align: justify;
+        }
+
+ .projects {padding: 50px 100px;  }  
+
+       .project-div {
+                padding: 10px;
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+
+            .project {
+                box-shadow: 5px 5px grey;
+                display: grid;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            } 
+            .project-image
+            {
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+
+           .project-data { padding: 20px;
+            }  
+            .project-button{
+                padding: 20px;
+                margin: 10px;
+            }
+
+            #contact {
+                padding: 50px 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #header image {
+                width: 200px;
+                height: 100px;
+            }
+
+            footer {
+                background-color: black;
+                width: 100%;
+                height: 250px;
+                color: white;
+                text-align: center;
+            }
+
+            @media (max-width:480px)
+
+            /* mobile*/
+                {
+                .project-div {
+                    grid-template-columns: repeat(1fr);
+                }
+
+                #home {
+                    flex-direction: column;
+                }
+
+                #header image {
+                    width: 150;
+                }
+
+                header {
+                    flex-direction: column;
+                    height: 200px;
+                }
+
+                .menu ul {
+                    flex-direction: column;
+                }
+
+            }
+
+
+            @media ((min-width:481px)and (max-width:767px))
+
+            /* tablet*/
+                {
+                .project-div {
+                    grid-template-columns: repeat(2fr, 1fr);
+                    display: g;
+                }
+
+                #home {
+                    flex-direction: column;
+                }
+
+                #header image {
+                    width: 150;
+                }
+
+                header {
+                    flex-direction: column;
+                    height: 200px;
+                }
+
+                .menu ul {
+                    flex-direction: column;
+                }
+
+            }
+
+            @media ((min-width:768px)and (max-width:1024px))
+
+            /* old desktop*/
+                {
+                .project-div {
+                    grid-template-columns: repeat(3fr, 1fr);
+                }
+            }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="image">
+            <img src="sowmyaimg.jpg" alt="logo" height="100" width="200">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href=".about">About</a></li>
+
+            </ul>
+        </div>
+    </header><br>
+    <main>
+        <section id="home">
+            <div class="left">
+                <p class="heading">Hello every one</p>
+                <p class="subheading"> I'm <span>front end developer</span></p>
+                <p class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum optio praesentium laborum,
+                    nostrum quia totam repudiandae illo animi. Perspiciatis laboriosam aspernatur cupiditate rem qui ut
+                    delectus aliquid porro neque illum.</p>
+                <button> contact me</button>
+                <button><a href="461136.jpg" download> My resume</a> </button>
+            </div>
+
+            <div class="right"> <img src="461136.jpg" alt="image"> </div>
+
+        </section>
+
+        <section id="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta voluptas deleniti, omnis id eaque
+                veniam cum laudantium voluptatem illo amet ullam temporibus, asperiores nostrum eum nam provident
+                tenetur quae optio aut aliquid dolor placeat hic magni? Velit doloremque, exercitationem quasi quod
+                recusandae sunt sapiente mollitia inventore sit dignissimos debitis maiores officia ipsum animi quis
+                labore natus in eos. Maiores quasi quae beatae, fugiat illo repellendus rem mollitia non facere repellat
+                impedit cupiditate illum nam odit pariatur nisi maxime voluptatem neque nihil aut? Maxime, dolores
+                reiciendis asperiores id et nesciunt, hic nobis sed nostrum, dignissimos totam autem omnis
+                necessitatibus aliquid. Enim porro quasi placeat voluptates, soluta harum amet, reprehenderit officiis
+                optio nihil, nam similique. Voluptatibus doloremque nulla at necessitatibus dolorum delectus enim id
+                exercitationem? Quisquam totam eius nemo blanditiis pariatur et assumenda? Atque quod laborum unde
+                delectus blanditiis magni veritatis modi aperiam architecto voluptates minus vero tempora praesentium
+                sit fugiat natus dolore necessitatibus mollitia temporibus, inventore nihil. Enim beatae reiciendis
+                eveniet quis labore minima, dicta, nulla eligendi porro quo unde. Dicta asperiores suscipit ipsa
+                recusandae id nihil dolorum ratione doloremque praesentium aliquid. Perspiciatis, sint incidunt minima
+                libero cum dignissimos adipisci dolorem perferendis praesentium et magnam, blanditiis doloribus sapiente
+                deserunt laboriosam?</p>
+        </section>
+
+        <section id="projects">
+
+            <h2 class="title">Projects</h2>
+            <div class="project-div">
+                <div class="project">
+                    <img class="project-img" src="461136.jpg" alt="project-image" height="100" width="150">
+                    <p class="project-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptatem
+                        quis nostrum aliquid similique quae, in consectetur? Eius, ipsa minima.</p>
+                    <br> <button class="project-button">Go to project</button>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="461136.jpg" alt="project-image" height="100" width="150">
+                    <p class="project-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptatem
+                        quis nostrum aliquid similique quae, in consectetur? Eius, ipsa minima.</p>
+                    <br> <button class="project-button">Go to project</button>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="461136.jpg" alt="project-image" height="100" width="150">
+                    <p class="project-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptatem
+                        quis nostrum aliquid similique quae, in consectetur? Eius, ipsa minima.</p>
+                    <br> <button class="project-button">Go to project</button>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="461136.jpg" alt="project-image" height="100" width="150">
+                    <p class="project-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptatem
+                        quis nostrum aliquid similique quae, in consectetur? Eius, ipsa minima.</p>
+                    <br> <button class="project-button">Go to project</button>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="461136.jpg" alt="project-image" height="100" width="150">
+                    <p class="project-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptatem
+                        quis nostrum aliquid similique quae, in consectetur? Eius, ipsa minima.</p>
+                    <br> <button class="project-button">Go to project</button>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="461136.jpg" alt="project-image" height="100" width="150">
+                    <p class="project-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptatem
+                        quis nostrum aliquid similique quae, in consectetur? Eius, ipsa minima.</p>
+                    <br> <button class="project-button">Go to project</button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <form>
+                <div class="name">
+                    <label for="">enter youy name</label><br>
+                    <input type="text">
+                </div>
+                <div class="email">
+                    <label for="">enter youy email</label><br>
+                    <input type="text">
+                </div>
+                <div class="message">
+                    <label for="">enter youy message</label><br>
+                    <textarea> </textarea>
+                </div>
+                <button type="submit"> submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Tis site is copy righted @copy; 2024
+    </footer>
+</body>
+
+</html>

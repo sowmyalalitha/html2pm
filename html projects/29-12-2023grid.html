@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border: 1px solid rgb(3, 92, 246);
+           border-top-left-radius: 20px;
+            display:grid;
+            margin: 20px;
+            grid-template-columns: repeat(3, 1fr) repeat(2.2fr);
+            grid-template-rows: repeat(2 100px);
+            box-shadow: 20x 5px black;
+            gap:10px;
+            padding: 20px;
+        }
+        .inner{
+            border: 1px solid rgb(174, 5, 240);;
+           padding: 20px;
+     
+        }
+        .i1{
+            grid-column-start: 2;
+            grid-column-end: 4;
+         }
+         .i3{grid-row-start: 1;
+        grid-row-end: 3;}
+    </style>
+</head>
+<body>
+    <div class="outer">
+<div class="inner i1">text1</div>
+<div class="inner i2">text2</div>
+<div class="inner i3">text3</div>
+<div class="inner">text4</div>
+<div class="inner">text4</div>
+<div class="inner">text4</div>
+<div class="inner">text4</div>
+<div class="inner">text4</div>
+<div class="inner">text4</div>
+<div class="inner">text4</div>
+<div class="inner">text4</div>
+    </div>
+
+    <div class="outer1">
+     <div class="iinner ii1">1</div>
+     <div class="iinner ii2">2</div>
+     <div class="iinner ii3">3</div>
+     <div class="iinner ii4">4</div>
+    </div>
+    <style>
+        .outer1{
+margin:100px;
+border:2px solid red;
+
+        }
+        .iinner{
+height: 100px;
+width: 100px;
+        }
+        .ii1{
+            background-color: aquamarine;
+            position:sticky;
+            top: 0px;
+left:500px;
+        }
+        .ii2{
+            background-color: rgb(50, 8, 13);
+        }
+        .ii3{
+            background-color: rgb(247, 240, 32);
+        }
+        .ii4{
+            background-color: rgb(6, 10, 235);
+        }
+     
+
+        .outer2{
+margin:100px;
+border:2px solid red;
+
+        }
+        .iinner{
+height: 100px;
+width: 100px;
+margin: 30px;
+        }
+        .iii1{
+       
+            transition: 3s all ease;
+            background-color: rgb(236, 122, 145);
+        }
+
+        .iii1:hover{
+            transform:translateX(20px);
+            background-color: chartreuse;
+            height: 150px;
+            width:250px;
+            border-radius: 50px;
+            
+        }
+    </style>
+   <div class="outer2">
+     <div class="iinner iii1">1</div></div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para2{background-color: red;} 
+
+        #para1{color: rgb(9, 20, 238);}
+        .inner+p /*descendent,>immediate child*/
+        { color: #a4d10f;}
+        .inner~p{
+            background-color: blanchedalmond;
+        }
+        /*pseudo selectors*/
+          /*pseudo classes*/
+        p::first-letter{
+            font-size: 20px;
+            background-color: red;
+        }
+        #para1::after{
+            content:"helloo"
+        }
+        button{
+            height: 50px;
+        width: 100px;
+        background-color: black;
+        color:white;
+        }
+        button:hover{
+background-color: aqua;
+color:black;
+        }
+        a:active{
+            background-color: #a4d10f;
+        }
+        a:visited{
+            color:rgb(250, 89, 116);
+        }
+        #input:focus{
+            border: 1px solid blue;
+        }
+        
+        #input:required{
+            background-color: rgb(19, 195, 195);
+        }
+        #input:optional{
+            background-color: rgb(10, 232, 143);
+        }
+        #input:disabled{
+            background-color: rgb(235, 106, 63);
+        }
+        #input:read-only{
+            background-color: rgb(171, 49, 198);
+        }
+         
+        .inner:nth-last-child(5)
+        {
+            background-color: blueviolet;
+        }
+
+
+
+.traffic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 50vh;
+    background-color: bisque;
+    margin:3px;
+    margin-left: 60vh;
+}
+.pole{
+border:1px solid  black;
+width: 15vh;
+border-radius: 100px;
+height: 50vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: whitesmoke;
+}
+.light{
+    border:1px solid black;
+height:80px;
+width:80px;
+border-radius: 100px;
+background-color: black;
+margin-bottom: 3px;
+}
+.light:nth-child(1):hover{
+    background-color: red;
+
+}
+.light:nth-child(2):hover{
+    background-color: rgb(243, 239, 19);
+}
+.light:nth-child(3):hover{
+    background-color: rgb(68, 240, 16);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <p class="para" id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate excepturi quam velit eligendi commodi omnis doloremque consectetur minus minima.
+      </p>
+            </div>
+         <div class="inner">
+            <p class="para"id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate excepturi quam velit eligendi commodi omnis doloremque consectetur minus minima.
+        </p></div>
+        <div class="inner">
+            <p class="para"id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate excepturi quam velit eligendi commodi omnis doloremque consectetur minus minima.
+        </p></div>
+        <div class="inner">
+            <div class="inner-inner">
+            <p class="para"id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate excepturi quam velit eligendi commodi omnis doloremque consectetur minus minima.
+        </p></div>
+    
+    </div>
+    <p>hello world</p>
+    <a  target="_blank" href="https://docs.google.com/spreadsheets/d/1sYwzVtzMVLjwiA9wnPy2HArho9stjoiduYMCJeK4waY/edit?pli=1#gid=1171519357 "> click link</a>
+    <button type="submit">click me</button>
+    <input type="text"  id="input" required>
+    <input type="text"  id="input" >
+    <input type="text"  id="input" disabled>
+    <input type="text"  id="input" readonly>
+
+    </div>
+    <br>
+    <div class="traffic">
+        <div class="pole">
+<div class="light"></div>
+<div class="light"></div>
+<div class="light"></div>
+</div>
+</div>
+    </div>
+</body>
+</html>
